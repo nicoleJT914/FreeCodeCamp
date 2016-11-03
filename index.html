@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Anniversary</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <header class="col-md-12 col-xs-12">
+                <h1>Forth Anniversary ...</h1>
+            </header>
+            <section class="photostack col-md-12 col-xs-12" id="photostack">
+                <div class="photo-wrap">
+                    <figure>
+                        <img class="photo-img" src="img/{{image}}" />
+                        <figcaption>
+                            <h2 class="photo-title">{{caption}}</h2>
+                            <div class="photo-back">
+                                <p>{{desc}}</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <div class="desc col-md-8 col-xs-12">
+                <p class="content"></p>
+            </div>
+            <nav class="col-md-3 col-md-offset-1 col-xs-12">
+                <button class="btn-item btn-current"><span>2012.08.25</span></button>
+                <button class="btn-item"><span>2013</span></button>
+                <button class="btn-item"><span>2014</span></button>
+                <button class="btn-item"><span>2015</span></button>
+                <button class="btn-item"><span>2016.10.27</span></button>
+                <button class="btn-item"><span>. . . . . .</span></button>
+            </nav>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="img/data.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/photo.js"></script>
+<script src="js/bottompart.js"></script>
+<script>
+    new Photostack(document.getElementById('photostack'));
+</script>
+</body>
+</html>
