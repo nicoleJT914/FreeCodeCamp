@@ -1,0 +1,361 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1489155666496'); /* IE9*/
+  src: url('iconfont.eot?t=1489155666496#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1489155666496') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1489155666496') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1489155666496#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:35px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 10px;
+  color: #222;
+}
+.iconfont:hover {
+	color: #fed136;
+}
+.icon-facebook:before { content: "\e724"; }
+
+.icon-ins:before { content: "\e607"; }
+
+.icon-twitter:before { content: "\e71f"; }
+
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif;
+	text-align: center;
+	min-width: 1170px;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:hover {
+	cursor: pointer;
+}
+input:focus, input:active, textarea:focus, textarea:active {
+	outline: none;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+/*问题：nav没有定宽，会变小，而nav-wrap不会*/
+.wrap {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+h4 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin: 15px auto;
+}
+p {
+	color: #777;
+	line-height: 32px;
+}
+.title {
+	padding: 0 15px;
+}
+.title .title-main {
+	margin-bottom: 20px;
+	font-size: 3rem;
+	font-weight: 700;
+}
+.title .title-vice {
+	font-size: 1.3rem;
+	margin-top: 10px;
+	margin-bottom: 80px;
+	color: #ccc;
+	font-style: italic;
+}
+/******navigation*******/
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: #222;
+	z-index: 99;
+}
+nav .site-name {
+	float: left;
+	font-size: 2rem;
+	font-weight: bolder;
+	font-style: italic;
+	color: #fed136;
+}
+nav .site-name a {
+	display: inline-block;
+	height: 50px;
+	line-height: 20px;
+	padding: 15px;
+}
+nav ul {
+	float: right;
+	margin-right: -15px;
+}
+nav ul > li {
+	float: left;
+}
+nav ul > li > a {
+	color: #fff;
+	display: block;
+	line-height: 20px;
+	padding: 15px;
+}
+nav ul > li > a:hover {
+	color: #fed136;
+}
+/*****Header section******/
+header {
+	background-color: #fff;
+	background: url(img/planet.png) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+}
+header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.16);
+}
+header .wrap {
+	position: relative;
+	padding-top: 300px;
+	padding-bottom: 200px;
+	z-index: 1;
+}
+header .welcome {
+	font-size: 2.5rem;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+header .intro {
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 60px;
+	margin-bottom: 50px;
+}
+header a {
+	padding: 20px 40px;
+	font-size: 1.5rem;
+	letter-spacing: 3px;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 5px;
+	background: #fed136;
+}
+header a:hover {
+	background: #fec503;
+}
+.layout {
+	padding: 150px 0;
+}
+.float-card {
+	width: 33.33%;
+	float: left;
+	padding: 15px;
+}
+/******reason section******/
+#reason .content img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+/*****recommond section******/
+/*问题：图片设置宽度，父容器设置最大宽度*/
+#recommend {
+	background-color: #f7f7f7;
+	font-size: 0;
+}
+#recommend .card > a {
+	display: inline-block;
+	width: 256px;
+	height: 256px;
+	overflow: hidden;
+	background: #fed136;
+}
+#recommend .card img {
+	width: 256px;
+}
+#recommend .card > div {
+	display: inline-block;
+	width: 256px;
+	min-width: 256px;
+	min-height: 284px;
+	padding: 25px;
+	background: #fff;
+}
+#recommend .card p {
+	font-size: 1rem;
+}
+/*****moments section*****/
+#moments ul {
+	position: relative;
+}
+#moments ul::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 2px;
+	margin-left: -1px;
+	background: #f1f1f1;
+}
+#moments ul > li {
+	margin-bottom: 100px;
+	position: relative;
+	min-height: 170px;
+}
+#moments ul > li .timeline-img {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -85px;
+}
+#moments ul > li .timeline-img img {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	border: 7px solid #f1f1f1;
+	background-color: #fed136;
+
+}
+#moments ul > li .timeline-panel.even {
+	float: left;
+	width: 40%;
+	padding: 0 20px 20px 100px;
+	text-align: right;
+}
+#moments ul > li .timeline-panel.odd {
+	float: right;
+	width: 40%;
+	padding: 0 100px 20px 20px;
+	text-align: left;
+}
+#moments ul > li:last-child .timeline-img {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+	border: 7px solid #f1f1f1;
+	background-color: #fed136;
+}
+#moments ul > li:last-child .timeline-img h4 {
+	margin: 0;
+	margin-top: 35px;
+	color: #fff;
+	line-height: 42.5px;
+}
+/*****team section*****/
+#team {
+	background-color: #f7f7f7;
+}
+#team .content {
+	margin-bottom: 50px;
+}
+#team .card span {
+	display: inline-block;
+}
+#team .card img {
+	width: 239px;
+	height: 239px;
+	border: 7px solid #fff;
+	border-radius: 50%;
+}
+#team .card p {
+	color: #777;
+	margin-top: -13px;
+}
+#team .thank {
+	clear: both;
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+/******contact section*****/
+#contact {
+	background: #222;
+}
+#contact .title-main {
+	color: #fff;
+}
+#contact form > div {
+	width: 50%;
+	float: left;
+	padding: 0 15px;
+}
+#contact form input {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 25px;
+	border-radius: 3px;
+}
+#contact form textarea{
+	display: block;
+	width: 100%;
+	height: 236px;
+	padding: 20px;
+	margin-bottom: 25px;
+}
+#contact form button {
+	padding: 20px 40px;
+	border: none;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #fff;
+	background: #fed136;
+	border-radius: 5px;
+}
+#contact form button:hover {
+	cursor: pointer;
+	background: #fec503;
+}
+/*****footer*****/
+footer{
+	padding: 25px 0;
+	font-size: 14px;
+} 
+footer .copy {
+	line-height: 40px;
+	color: #bbb;
+}
+footer .use {
+	line-height: 40px;
+	color: #fed136;
+}
+footer .use a {
+	padding: 10px;
+}
+footer .use a:hover {
+	text-decoration: underline;
+}
